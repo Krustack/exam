@@ -27,6 +27,13 @@ header{
     }
 }
 
+button{
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
 .form{
     display: flex;
     flex-direction: column;
@@ -42,16 +49,13 @@ header{
         outline: none;
     }
     & button{
-        padding: 0.5rem 1rem;
-        border: none;
-        border-radius: 5px;
         background: var(--secondary-color-1);
         color: var(--black-color);
-        cursor: pointer;
         &:hover{
-            background: var(--secondary-color-2);
+         background: var(--secondary-color-2);
         }
     }
+
 }
 .list ul{
     display: flex;
@@ -69,8 +73,16 @@ header{
         &:hover{
             background: var(--secondary-color-2);
         }
+        & button{
+            background: var(--accent-color);
+            color: var(--black-color);
+            &:hover{
+             background: var(--primary-color-2);
+            }
+        }
     }
 }
+
 
 footer{
     position: fixed;
